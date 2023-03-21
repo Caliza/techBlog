@@ -8,7 +8,7 @@ const password = document.querySelector('#password-login').value.trim();
 
 if (email && password) {
     // Send a post request to API endpoint
-    const response = await fetch('/api/users/login', {
+    const response =  fetch('/api/users/login', {
         method: 'POST',
         nody: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -51,4 +51,3 @@ document
 document
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
-    
