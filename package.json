@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Caliza/techBlog#readme",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "bcrypt": "^4.0.1",
     "connect-session-sequelize": "^6.1.1",
     "dotenv": "^8.2.0",
