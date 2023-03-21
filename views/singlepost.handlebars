@@ -1,23 +1,23 @@
 <div class="text-center">
-  <h2>{{title}}</h2>
- <p>{{content}}</p>
-  {{!-- {{<p>Created by {{user.username}} on {{format_date date_created}}</p>}} --}}
-  
- {{!-- {{#if comments.length}}
-  <div class="col-md-6 project-list">
-    <h3>Comments:</h3>
+    <h2>{{title}}</h2>
+    <p>{{content}}</p>
+    <p>Created by {{user.username}} on {{format_date date_created}} </p> 
 
-    {{#each}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        {{comment}}
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
-        <button class="btn btn-sm btn-pri" data-id="{{id}}">Update</button>
-      </div>
+    {{#if comments.length}}
+    <div class="col-md-6 project-list">
+        <h3>Comments:</h3>
+
+        {{#each comments}}
+        <div class="row mb-2">
+            <div class="col-md-8">
+                {{comment}}
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+                <button class="btn btn-sm btn-pri" data-id="{{id}}">Update</button>
+            </div>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
-  </div>
-  {{/if}} --}}
+    {{/if}}  
 </div>
