@@ -31,7 +31,7 @@ const delButtonHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to delete project');
     }
@@ -42,6 +42,6 @@ document
   .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.project-delete')
-//   .addEventListener('click', delButtonHandler);
+document
+  .querySelector('.project-delete')
+  .addEventListener('click', delButtonHandler);
