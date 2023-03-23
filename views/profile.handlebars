@@ -10,7 +10,7 @@
 
         <form class="form new-project-form">
             <div class="form-group">
-                <label for="project-name">project name:</label>
+                <label for="project-name">Blog name:</label>
                 <input class="form-input" type="text" id="project-name" name="project-name" />
             </div>
             <div class="form-group">
@@ -18,7 +18,7 @@
                 <input class="form-input" type="number" id="project-funding" name="project-funding" />
             </div>
             <div class="form-group">
-                <label for="project-desc">description:</label>
+                <label for="project-desc">Post:</label>
                 <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
             </div>
             <div class="form-group">
@@ -29,7 +29,7 @@
 
     {{#if posts.length}}
     <div class="col-md-6 project-list">
-        <h3>Current Projects:</h3>
+        <h3>Current Blogs:</h3>
 
         {{#each posts as |post|}}
         <div class="row mb-2">
