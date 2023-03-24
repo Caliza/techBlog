@@ -38,9 +38,9 @@
 
 ## Links
 
-- GitHub: 
-- Google Drive: 
-- Castify: 
+- GitHub: https://github.com/Caliza/techBlog 
+- Google Drive: https://drive.google.com/file/d/1Lplm8_ZtXAWfPyy-Ys1wDybErHTtxWyQ/view?usp=sharing
+- heroku: https://arcane-stream-71577.herokuapp.com/
 
 ## Questions
 
