@@ -6,7 +6,7 @@
 
 <div class="row mt-4">
     <div class="col-md-6">
-        <h3>Create a New Project:</h3>
+        <h3>Create a New Post:</h3>
 
         <form class="form new-project-form">
             <div class="form-group">
@@ -34,7 +34,7 @@
         {{#each posts as |post|}}
         <div class="row mb-2">
             <div class="col-md-8">
-                <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+                <h4><a href="/edit/{{post.id}}">{{post.title}}</a></h4>
                 <p>
                     {{post.content}}
                 </p>

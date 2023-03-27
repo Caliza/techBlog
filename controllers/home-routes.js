@@ -88,5 +88,23 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
+router.get('/edit/:id', withAuth, async (req, res) => {
+    try {
+      const postData = await Post.findByPk(req.params.id)
+      if (postData) {
+        const post = postData.get({
+          plain: true
+        })
+        res.render('editpost', {
+          post
+        })
+      }
+      else(
+        res.status(404).end()
+      )
+    } catch (error) {
+      res.redirect('login')
+    }
+})
 
 module.exports = router;
