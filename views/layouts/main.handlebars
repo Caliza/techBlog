@@ -18,18 +18,18 @@
         <h1>Tech Blog</h1>
     </header>
     <hr style="height:5px;color:black;border-width:10px;margin:0;background-color:black;margin-top:0;">
-    <nav class="px-4 mt-1 d-flex justify-content-end display-4">
+    <nav class="px-4 mt-5 d-flex justify-content-end display-4">
         <a class="mx-2" href="/">Homepage</a>
     
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a class="mx-2" href="/dashboard">Dashboard</a> |
-        <button class="no-button" id="logout">logout</button>
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a class="mx-2" href="/login">Login</a>
+        | <a class="mx-2" href="/login">Login</a>
         {{/if}}
     </nav>
-    <main class="px-4">{{{ body }}}</main>
+    <main class="px-4 mt-5">{{{ body }}}</main>
     {{!-- <div class="form-group">
         <label for="project-desc">Post:</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>

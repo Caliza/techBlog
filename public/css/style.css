@@ -1,12 +1,37 @@
-#logout {
-font-size: 32px !important
-};
-
-/* hr {
-    border-bottom: 10px solid bold black;
+.box {
+    background-color: #fff;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom right, white, rgb(235, 235, 250));
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
     display: block;
-    margin: 0px;
-    padding: 0px;
-    
-}; */
+    padding: 1.25rem;
+}
+
+.box-1 {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+
+.no-button {
+    font-size: 56px !important;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #0455ad;
+    text-decoration: none;
+}
+
+;
+
+.no-button:hover {
+    color: orange;
+    text-decoration: underline !important;
+    border: 2px;
+}
 
