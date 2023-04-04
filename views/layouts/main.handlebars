@@ -8,25 +8,28 @@
     <title>Tech Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
-<body>
-    <header class="bg-warning text-center">
+<body >
+    <hr style="height:5px;color:black;border-width:10px;margin:0;background-color:black;margin-bottom:5px;">
+    <header class="bg-warning text-center my-0 py-1" id="line">
         <h1>Tech Blog</h1>
     </header>
-    <nav>
-        <a href="">Homepage</a>
-        <a href="">Dashboard</a>
+    <hr style="height:5px;color:black;border-width:10px;margin:0;background-color:black;">
+    <nav class="px-4 mt-1 d-flex justify-content-end display-4">
+        <a class="mx-2" href="/">Homepage</a>
+    
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/dashboard">Dashboard</a> |
+        <a class="mx-2" href="/dashboard">Dashboard</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a class="mx-2" href="/login">Login</a>
         {{/if}}
     </nav>
-    {{{ body }}}
+    <main class="px-4">{{{ body }}}</main>
     {{!-- <div class="form-group">
         <label for="project-desc">Post:</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
@@ -43,6 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
     <script src="/js/logout.js"></script>
 </body>
 
