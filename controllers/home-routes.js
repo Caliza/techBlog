@@ -66,7 +66,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
         // Find the logged in user based on the session ID
         const user = await User.findByPk(req.session.user_id)
         console.log(user);
-        
+
         const postData = await Post.findAll({ 
           include: [User],
           where: { user_id: req.session.user_id }, 
@@ -76,7 +76,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
         // const user = postData[0].user.username;
 
         res.render('profile', {
-            //user,
+            user,
             posts,
             logged_in: true
         });
