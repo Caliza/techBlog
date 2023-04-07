@@ -4,8 +4,6 @@
 ## Table of Contents
 
   * [Description](#description)
-  
-  * [Installation](#installation)
 
   * [Usage](#usage)
 
@@ -15,31 +13,21 @@
 
 ## Description
 
-- My motivation was to create an terminal application that a user could manage an employe database and organize it by department, role, salary, etc.
-- I built this project to learn mysql and expand my knowledge in javasript and node.js and how to more efficiently use command-line features.
-- It allows user to create a database with as many departments, roles, and employees. It also allow user to update an employee from a worker to a manager.
-- Learned how to write schema.sql and seeds.sql and db.query to manipulate database files.
-
-## Installation
-
-- Clone code from GitHub repository:
-- Open in VS Code and command-line terminal.
-- Start mysql and SOURCE scheema.sql and seeds.sql.
-- Exit mysql an type 'node index.js' to start application. 
+- My motivation was to create this tech blog so that a user could post and edit comments onto the tech blog.
+- I built this project to learn more about running seeds and expand my knowledge in javasript and node.js and become more efficient using routes.
+- It allows user to create posts in a blog and view posts from other users. 
+- Learned how to write schema.sql and seeds.sql and db.query to manipulate database files. 
 
 ## Usage
   
- - After typing 'node index.js' in command-line terminal, the menu prompt will appear where user can select from choices to premorm various tasks.
-
-
-
+ - Go to application url, create an account an account.
+ - Create post in Dashboard, able to edit posts after being created, and can view other users posts in Homepage.
     
  ![techBlog](./assets/images/techBlog.jpg)
 
 ## Links
 
 - GitHub: https://github.com/Caliza/techBlog 
-- Google Drive: https://drive.google.com/file/d/1Lplm8_ZtXAWfPyy-Ys1wDybErHTtxWyQ/view?usp=sharing
 - heroku: https://arcane-stream-71577.herokuapp.com/
 
 ## Questions
